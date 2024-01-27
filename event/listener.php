@@ -10,6 +10,8 @@
 
 namespace phpbbmodders\groupswitches\event;
 
+use phpbb\template\template;
+use phpbb\user;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
@@ -17,23 +19,23 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 */
 class listener implements EventSubscriberInterface
 {
-	/** @var \phpbb\template\template */
+	/* @var template */
 	protected $template;
 
-	/** @var \phpbb\user */
+	/** @var user */
 	protected $user;
 
 	/** @var string phpBB root path */
-	protected $phpbb_root_path;
+	protected $root_path;
 
 	/** @var string PHP extension */
 	protected $php_ext;
 
-	public function __construct(\phpbb\template\template $template, \phpbb\user $user, $phpbb_root_path, $php_ext)
+	public function __construct(template $template, user $user, $root_path, $php_ext)
 	{
 		$this->template = $template;
 		$this->user = $user;
-		$this->root_path = $phpbb_root_path;
+		$this->root_path = $root_path;
 		$this->php_ext = $php_ext;
 	}
 

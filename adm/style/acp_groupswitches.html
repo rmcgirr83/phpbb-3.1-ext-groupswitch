@@ -1,14 +1,14 @@
-<!-- INCLUDE overall_header.html -->
+{% INCLUDE 'overall_header.html' %}
 
-	<h1>{L_GROUP_SWITCHES} - {L_GROUP_SWITCHES_VERSION}</h1>
-	<p>{L_GROUP_SWITCHES_EXPLAIN}</p>
+	<h1>{{ lang('GROUP_SWITCHES') }} - {{ lang('GROUP_SWITCHES_VERSION') }}</h1>
+	<p>{{ lang('GROUP_SWITCHES_EXPLAIN') }}</p>
 
 	<table class="table1">
 		<col class="col1" /><col class="col1" /><col class="col2" /><col class="col2" /><col class="col2" />
 	<thead>
 	<tr>
-		<th style="width: 50%">{L_GROUP}</th>
-		<th>{L_GROUP_ID}</th>
+		<th style="width: 50%">{{ lang('GROUP') }}</th>
+		<th style="text-align: center;">{{ lang('GROUP_ID') }}</th>
 	</tr>
 	</thead>
 	<tbody>
@@ -20,4 +20,5 @@
 	<!-- END groups -->
 	</tbody>
 	</table>
-<!-- INCLUDE overall_footer.html -->
+	<p>{{ lang('TEMPLATE_EVENTS') }}</p>
+{% INCLUDE 'overall_footer.html' %}

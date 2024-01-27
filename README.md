@@ -1,11 +1,8 @@
 phpbb-3.1-ext-groupswitches
 =========================
 
-phpBB 3.1 extension to allow the use of group switches in HTML files.
+phpBB extension to allow the use of group switches in HTML files.
 
-
-
-[![Build Status](https://travis-ci.org/phpbbmodders/phpbb-3.1-ext-groupswitch.svg)](https://travis-ci.org/phpbbmodders/phpbb-3.1-ext-groupswitch)
 ## Installation
 
 ### 1. clone
@@ -20,7 +17,7 @@ git clone https://github.com/phpbbmodders/phpbb-3.1-ext-groupswitch.git ext/phpb
 Go to admin panel -> tab customise -> Manage extensions -> enable Group Switches
 
 ### 3. use
-To use this extension you should know the template events that are available for you.  You can find these template events [here](https://wiki.phpbb.com/Event_List#Template_Events) toward the bottom of the page.
+To use this extension you should know the template events that are available for you.  You can find these template events [here](https://area51.phpbb.com/docs/dev/master/extensions/events_list.html#template-events) toward the bottom of the page.
 
 Once you determine the template event you want to use, simply make a new template event html file with the code you want for the group switch to display.  An example can be found [here](https://www.phpbb.com/support/docs/en/3.0/kb/article/creating-group-template-switches/) you do not need the edits to the core PHP phpBB files.
 

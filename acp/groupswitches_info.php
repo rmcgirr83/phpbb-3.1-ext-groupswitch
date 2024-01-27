@@ -20,7 +20,7 @@ class groupswitches_info
 		return array(
 			'filename'	=> 'phpbbmodders\groupswitches\acp\groupswitches_module',
 			'title'		=> 'GROUP_SWITCHES',
-			'version'	=> '1.0.0',
+			'version'	=> '1.0.1',
 			'modes'		=> array(
 				'main'	=> array('title' => 'GROUP_SWITCHES', 'auth'	=> 'ext_phpbbmodders/groupswitches && acl_a_group', 'cat'	=> array('ACP_GROUPS')),
 			),
